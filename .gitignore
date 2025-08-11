@@ -26,6 +26,6 @@ brendan/
 .terraform*
 .aws/*
 # .vscode/*
-*.png
+# *.png
 *.csv
 *.swp
