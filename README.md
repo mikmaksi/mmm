@@ -68,7 +68,7 @@ These variables aren’t marketing spends, but they still affect conversions and
 
 First-glance visualization of variables over time.
 
-![image.png](Marketing%20Mix%20Modeling%20(MMM)%20with%20GAMs%2024cebffba6b78036abf5fd15b911fbe7/image.png)
+![Time Series View](image.png)
 
 ---
 
@@ -76,11 +76,11 @@ First-glance visualization of variables over time.
 
 True latent contributions per variable (hidden in real life, shown here for validation).
 
-![image.png](Marketing%20Mix%20Modeling%20(MMM)%20with%20GAMs%2024cebffba6b78036abf5fd15b911fbe7/image%201.png)
+![Ground Truth](image1.png)
 
 When summed with noise → patterns are nearly invisible.
 
-![image.png](Marketing%20Mix%20Modeling%20(MMM)%20with%20GAMs%2024cebffba6b78036abf5fd15b911fbe7/image%202.png)
+![Noise](image2.png)
 
 ---
 
@@ -162,7 +162,7 @@ lams = [lam] * 5 + [[0.0]] * len(control_cols)  # zero penalty for controls
 gam.gridsearch(X, y, lam=lams)
 ```
 
-![image.png](Marketing%20Mix%20Modeling%20(MMM)%20with%20GAMs%2024cebffba6b78036abf5fd15b911fbe7/image%203.png)
+![Gam Fits](image3.png)
 
 GAM recovered correct shapes — even for complex saturation — with no pre-specified form.
 
@@ -172,7 +172,7 @@ GAM recovered correct shapes — even for complex saturation — with no pre-spe
 
 PDPs are nice, but we have to bring it back to business metrics
 
-![image.png](Marketing%20Mix%20Modeling%20(MMM)%20with%20GAMs%2024cebffba6b78036abf5fd15b911fbe7/image%204.png)
+![Lift and ROI](image4.png)
 
 1. Lift
     1. Extra conversions over baseline spend = 0.
