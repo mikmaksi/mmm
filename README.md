@@ -68,7 +68,7 @@ These variables aren’t marketing spends, but they still affect conversions and
 
 First-glance visualization of variables over time.
 
-![Time Series View](image.png)
+![Time Series View](plots/synthetic_data_timeseries.png)
 
 ---
 
@@ -76,11 +76,11 @@ First-glance visualization of variables over time.
 
 True latent contributions per variable (hidden in real life, shown here for validation).
 
-![Ground Truth](image1.png)
+![Ground Truth](plots/individual_effect.png)
 
 When summed with noise → patterns are nearly invisible.
 
-![Noise](image2.png)
+![Noise](plots/total_effect.png)
 
 ---
 
@@ -162,7 +162,7 @@ lams = [lam] * 5 + [[0.0]] * len(control_cols)  # zero penalty for controls
 gam.gridsearch(X, y, lam=lams)
 ```
 
-![Gam Fits](image3.png)
+![Gam Fits](plots/gam_fits.png)
 
 GAM recovered correct shapes — even for complex saturation — with no pre-specified form.
 
@@ -172,7 +172,7 @@ GAM recovered correct shapes — even for complex saturation — with no pre-spe
 
 PDPs are nice, but we have to bring it back to business metrics
 
-![Lift and ROI](image4.png)
+![Lift and ROI](plots/lift_and_roi.png)
 
 1. Lift
     1. Extra conversions over baseline spend = 0.
