@@ -172,7 +172,7 @@ GAM recovered correct shapes — even for complex saturation — with no pre-spe
 
 PDPs are nice, but we have to bring it back to business metrics
 
-![Lift and ROI](plots/lift_and_roi.png)
+![Lift and ROI](plots/lift_roi_curves.png)
 
 1. Lift
     1. Extra conversions over baseline spend = 0.
